@@ -28,8 +28,15 @@ public class MainActivity extends AppCompatActivity {
         naverbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri googleUri = Uri.parse("https://www.naver.com");
+                Intent googleIntent = new Intent(Intent.ACTION_VIEW, googleUri);
 
-                Toast.makeText(getApplicationContext(),"버튼을 눌렀어요", Toast.LENGTH_SHORT).show();
+                if (googleIntent.resolveActivity(getPackageManager()) != null){
+                    startActivity(googleIntent);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"실행 안 됨", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -51,16 +58,29 @@ public class MainActivity extends AppCompatActivity {
         cbnugsbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri googleUri = Uri.parse("https://eis.cbnu.ac.kr");
+                Intent googleIntent = new Intent(Intent.ACTION_VIEW, googleUri);
 
-                Toast.makeText(getApplicationContext(),"버튼을 눌렀어요", Toast.LENGTH_SHORT).show();
+                if (googleIntent.resolveActivity(getPackageManager()) != null){
+                    startActivity(googleIntent);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"실행 안 됨", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
         cbnulmsbut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri googleUri = Uri.parse("https://lms.chungbuk.ac.kr/");
+                Intent googleIntent = new Intent(Intent.ACTION_VIEW, googleUri);
 
-                Toast.makeText(getApplicationContext(),"버튼을 눌렀어요", Toast.LENGTH_SHORT).show();
+                if (googleIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(googleIntent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "실행 안 됨", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
