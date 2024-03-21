@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/meinfo"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:text="2022041021 윤혜준"
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="5pt"
+        ></TextView>
+
+    <android.widget.Button
+        android:id="@+id/naverbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAVER"
+        android:background="#2DB400"></android.widget.Button>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/googlebut"
+        android:text="Google"
+        android:background="#FFDDDD"></android.widget.Button>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbnugsbut"
+        android:text="충북대 개신누리"
+        android:background="#FFFFDD"></android.widget.Button>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbnulmsbut"
+        android:text="충북대 LMS"
+        android:background="#DDDDFF"></android.widget.Button>
+
+</LinearLayout>
